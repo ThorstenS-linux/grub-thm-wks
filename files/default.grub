@@ -1,0 +1,4 @@
+GRUB_BACKGROUND="/boot/grub/themes/thm-wks/background.png"
+GRUB_TERMINAL_OUTPUT="gfxterm"
+GRUB_THEME="/boot/grub/themes/thm-wks/theme.txt"
+
