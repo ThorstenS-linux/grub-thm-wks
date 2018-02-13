@@ -1,4 +1,4 @@
-Mein debin grub2 theme, welches das breeze theme um einige Punkte ergänzt
+Mein debian grub2 theme, welches das breeze theme um einige Punkte ergänzt
 1. ein icon für memtest
 2. icons für reboot und shutdown
 3. ein eigenes bokeh Hintergrundbild
