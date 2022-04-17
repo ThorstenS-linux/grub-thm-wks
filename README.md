@@ -1,22 +1,26 @@
-Mein debian grub2 theme, welches das breeze theme um einige Punkte ergänzt
-1. ein icon für memtest
-2. icons für reboot und shutdown
-3. ein eigenes bokeh Hintergrundbild
-4. ein größeres Menü, sodaß alle relevanten Einträge sichtbar sind.
+My debian grub2 theme, which complements the breeze theme by some points
+1. an icon for memtest
+2. icons for reboot and shutdown
+3. an own bokeh background image
+4. a bigger menu, so that all relevant entries are visible.
 
-Unter files ist das Theme für /boot/grub/themes/
-die Datei default.grub enthält die Ergänzugen für die Datei /etc/default/grub
+Put the files under `/boot/grub/themes/`, the `default.grub` file contains the additions for `/etc/default/grub`
 
-Damit memtest ein Icon bekommt, muss die Datei /etc/grub.d/20_memtest86+ in der Zeile mit dem menuentry ein »--class memtest« ergänzt bekommen:  
+For memtest to get an icon, the file `/etc/grub.d/20_memtest86+` must have `--class memtest` added to the line with the menuentry:
+
 ```
 menuentry "Memory test (memtest86+)" --class memtest {
 ```
-Die Einträge für reboot und shutdown kommen aus der Datei 40_custom,
-die nach /etc/grub.d zu kopieren ist.
 
-update-grub aktiviert danach das neue Theme und die Booteinträge - siehe screenshot.png
+The entries for reboot and shutdown come from the file `40_custom`,
+which has to be copied to `/etc/grub.d./`
 
-Der background wurde mit dem bokeh tool hergestellt: https://codepen.io/ajm13/full/Bvczj
+`update-grub` activates the new theme and the boot entries - see screenshot.png.  
+To preview/test your theme, use [grub2-theme-preview](https://github.com/hartwork/grub2-theme-preview)
 
-## everybody loves screenshots:
+The background was made with this bokeh tool:
+https://codepen.io/ajm13/full/Bvczj
+
+## everybody loves screenshots
+
 ![screenshot](./screenshot.png)
